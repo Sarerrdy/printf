@@ -4,7 +4,7 @@
  * @arg: argument
  * Return: count
  */
-int d_handler(va_list arg)
+int d_handle(va_list arg)
 {
 	int count;
 	int val = va_arg(arg, int);
@@ -18,7 +18,7 @@ int d_handler(va_list arg)
  * @arg: argument
  * Return: count
  */
-int i_handler(va_list arg)
+int i_handle(va_list arg)
 {
 	int count;
 	int val = va_arg(arg, int);
@@ -32,7 +32,7 @@ int i_handler(va_list arg)
  * @arg: argument
  * Return: count
  */
-int c_handler(va_list arg)
+int c_handle(va_list arg)
 {
 	int count;
 	char get_char = va_arg(arg, int);
@@ -45,7 +45,7 @@ int c_handler(va_list arg)
  * @arg: argument
  * Return: count
  */
-int s_handler(va_list arg)
+int s_handle(va_list arg)
 {
 	int count = 0;
 	char *ptr = va_arg(arg, char *);
