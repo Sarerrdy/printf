@@ -9,11 +9,11 @@
 int _printf(const char *format, ...)
 {
 	int i;
-	va_list args;
-	int ncount;
+	va_list arg;
+	int numcount;
 
-	ncount = 0;
-	va_start(args, format);
+	numcount = 0;
+	va_start(arg, format);
 
 	if (format == NULL)
 	{
@@ -27,20 +27,20 @@ int _printf(const char *format, ...)
 		if (format[i] == 'c' || format[i] == 's' || format[i] == 'd'
 		|| format[i] == 'i')
 		{
-		ncount += specifier(format[i])(args);
+		numcount += specifier(format[i])(arg);
 		}
 	else
 	{
-	ncount += _putchar('%');
-		/*ncount += _putchar(format[i]);*/
+	numcount += _putchar('%');
+		/*nucount += _putchar(format[i]);*/
 	continue;
 	}
 	}
 	else
 	{
-	ncount += _putchar(format[i]);
+	numcount += _putchar(format[i]);
 	}
 	}
 
-return (ncount);
+return (numcount);
 }

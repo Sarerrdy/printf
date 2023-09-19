@@ -2,28 +2,28 @@
 
 /**
  * specifier - select a conversion spscifer
- * @str: parameter
+ * @string: parameter
  * Return: 0
  */
 
-int (*specifier(char str))(va_list arg)
+int (*specifier(char string))(va_list param)
 {
 
-	if (str == 'c')
+	if (string == 'c')
 	{
-		return (&c_handler);
+		return (&c_hand);
 	}
-	else if (str == 'd')
+	else if (string == 'd')
 	{
-		return (&d_handler);
+		return (&d_hand);
 	}
-	else if (str == 'i')
+	else if (string == 'i')
 	{
-		return (&i_handler);
+		return (&i_hand);
 	}
-	else if (str == 's')
+	else if (string == 's')
 	{
-		return (&s_handler);
+		return (&s_hand);
 	}
 return (0);
 }

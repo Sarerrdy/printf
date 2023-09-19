@@ -2,24 +2,24 @@
 
 /**
  * print_int - a function that prints intigers
- * @num: number to print
- * @count: count
- * Return: count + 1
+ * @digit: number to print
+ * @counter: count
+ * Return: counter + 1
  */
 
-int print_int(long num, int count)
+int print_int(long digit, int counter)
 {
-	if (num < 0)
+	if (digit < 0)
 	{
 		_putchar('-');
-		count++;
-	num = num * -1;
+		counter++;
+	digit = digit * -1;
 	}
-	if (num / 10)
+	if (digit / 10)
 	{
-		count = print_int(num / 10, count);
+		counter = print_int(digit / 10, counter);
 	}
-	_putchar(num % 10 + '0');
-	return (count + 1);
+	_putchar(digit % 10 + '0');
+	return (counter + 1);
 }
 

@@ -9,11 +9,11 @@
 
 int _printf(const char *format, ...);
 int (*specifier(char str))(va_list arg);
-int s_handler(va_list arg);
-int d_handler(va_list arg);
-int c_handler(va_list arg);
-int i_handler(va_list arg);
-int print_int(long num, int count);
+int s_hand(va_list param);
+int d_hand(va_list param);
+int c_hand(va_list param);
+int i_hand(va_list param);
+int print_int(long digit, int counter);
 int _putchar(char c);
 
 #endif

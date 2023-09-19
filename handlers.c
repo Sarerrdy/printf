@@ -1,54 +1,54 @@
 #include "main.h"
 /**
- * d_handler - handles decimal digits
- * @arg: argument
+ * d_han - handles decimal digits
+ * @param: argument
  * Return: count
  */
-int d_handle(va_list arg)
+int d_hand(va_list param)
 {
 	int count;
-	int val = va_arg(arg, int);
+	int val = va_arg(param, int);
 
 	count = print_int(val, 0);
 
 	return (count);
 }
 /**
- * i_handler - handle intigers
- * @arg: argument
+ * i_hand - handle intigers
+ * @param: argument
  * Return: count
  */
-int i_handle(va_list arg)
+int i_hand(va_list param)
 {
 	int count;
-	int val = va_arg(arg, int);
+	int val = va_arg(param, int);
 
 	count = print_int(val, 0);
 
 	return (count);
 }
 /**
- * c_handler - handles characters
- * @arg: argument
+ * c_hand - handles characters
+ * @param: argument
  * Return: count
  */
-int c_handle(va_list arg)
+int c_hand(va_list param)
 {
 	int count;
-	char get_char = va_arg(arg, int);
+	char get_char = va_arg(param, int);
 
 	count = _putchar(get_char);
 	return (count);
 }
 /**
- * s_handler - handles strings
- * @arg: argument
+ * s_hand - handles strings
+ * @param: argument
  * Return: count
  */
-int s_handle(va_list arg)
+int s_hand(va_list param)
 {
 	int count = 0;
-	char *ptr = va_arg(arg, char *);
+	char *ptr = va_arg(param, char *);
 
 	if (ptr == NULL)
 	{
